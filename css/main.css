@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.clr{
+    clear: both;
+}
+body{
+    background-color: #fafafa;
+    width: 1440px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.header {
+    height: 20%;
+    background-color: #ffffff;
+    padding: 20px 0 20px 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}
+.header .container{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+.icon-text {
+    margin-left: 8px;
+}
+
+.topnav {
+
+    display: flex;
+    overflow: hidden;
+    height: 60px;
+    width: 35%;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.searchbar .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+#select-box{
+    border: none;
+    float: right;
+    height:60px;
+    overflow-y:auto;
+    width:200px;
+    border-radius: 5px;
+}
+option{
+    border: none;
+    overflow-y:scroll;
+}
+
+.options{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.select-wrap{
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+.topnav input[type=text] {
+    float: right;
+    padding: 20px;
+    font-size: 17px;
+    border: none;
+    width: 76%;
+    /* background-color: coral; */
+}
+.search-container{
+    background-color: #ffffff;
+}
+.search-container button {
+    background-color: #ffffff;
+    width: 15%;
+    padding: 20px 30px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.photos{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    
+}
+.flag{
+    background-color: #ffffff;
+    width: 22%;
+    height: 350px;
+    box-sizing: border-box;
+    /* margin-bottom: 6%; */
+    margin-top: 5%;
+    border-radius: 10px;
+    margin-right: 1px;
+    
+}
+.flag h1,a{
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+.flag p{
+    margin-bottom: 5px;
+}
+
+.img-flag{
+    height: 50%;
+}
+.img-flag img{
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 10px 10px 0 0;
+}
+.description{
+    margin: 20px;
+}
+.pic-title{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.bold{
+    font-weight: bold;
+}
+
+@media screen and (max-width:375px){
+    body{
+        width: auto;
+        /* font-size: 9px; */
+    }
+    .container{
+        width: 88%;
+    }
+    .header {
+        height: 10%;
+    }
+    .header .container{
+        font-size: 8px;
+    }
+    .header a{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .search-container{
+        margin-top: 10px;
+        margin-bottom: 7px;
+        display: flex;
+        flex-direction: row-reverse;
+        width: auto;
+    }
+    .searchbar .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+    }
+    .topnav{
+        width: auto;
+        margin: 10px 0 20px 0;
+    }
+    .search-container button {
+        width: 15%;
+        padding: 20px 30px;
+    }
+    .searchbar .filter{
+        margin: 10px 0 15px 0;
+    }
+    #select-box{
+        height:55px;
+        width:200px;
+        border-radius: 5px;
+    }
+
+    .photos{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+        margin-bottom: 30px;
+    }
+    .flag{
+        width: 80%;
+        height: 350px;
+        font-size: 14px;    
+    }
+    .flag h1{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1440px){
+    body{
+        width: auto;
+    }
+    .photos{
+        margin-bottom: 30px;
+    }
+}
