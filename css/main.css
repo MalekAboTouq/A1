@@ -42,7 +42,7 @@ body{
     margin-left: 8px;
 }
 
-.topnav {
+.search {
 
     display: flex;
     overflow: hidden;
@@ -80,7 +80,7 @@ option{
     background-color: #fafafa;
     border-radius: 5px;
 }
-.topnav input[type=text] {
+.search input[type=text] {
     float: right;
     padding: 20px;
     font-size: 17px;
@@ -90,6 +90,7 @@ option{
 }
 .search-container{
     background-color: #ffffff;
+    
 }
 .search-container button {
     background-color: #ffffff;
@@ -181,7 +182,7 @@ option{
         align-items: flex-start;
         width: 90%;
     }
-    .topnav{
+    .search{
         width: auto;
         margin: 10px 0 20px 0;
     }
