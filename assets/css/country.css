@@ -1,39 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.container{
+
+.container {
     width: 90%;
     margin: auto;
 }
-.clr{
+
+.clr {
     clear: both;
 }
-body{
+
+body {
     background-color: #fafafa;
-    width: 1440px;
+    /* width: 1440px; */
     font-family: 'Nunito Sans', sans-serif;
-    
 }
+
 .header {
     height: 20%;
     background-color: #ffffff;
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
 }
-.header .container{
+
+.header .container {
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header a{
+
+.header a {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
     color: #000;
@@ -43,74 +49,65 @@ body{
     margin-left: 8px;
 }
 
-.topnav {
 
-    display: flex;
-    overflow: hidden;
-    height: 60px;
-    width: 35%;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    flex-direction: column;
-    border-radius: 5px;
-}
-.searchbar .container{
+.searchbar .container {
     display: flex;
     justify-content: space-between;
     margin-top: 3%;
 }
 
 .search-container {
-    padding: 10px 50px 10px 50px;
+    padding: 10px 50px;
     background-color: #ffffff;
     color: #000;
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px #858585;
 }
-.button-space{
+
+.button-space {
     padding-left: 15px;
 }
-.search-container a{
+
+.search-container a {
     color: #000;
 }
 
-.flag{
+.flag {
     display: flex;
     justify-content: space-between;
 }
 
-
-.falg-info{
+.falg-info {
     margin-top: 5%;
 }
 
-
-.img-flag{
+.img-flag {
     width: 40%;
 }
 
-.img-flag img{
+.img-flag img {
     width: 100%;
 }
 
-.description{
+
+.description {
     width: 50%;
     margin-top: 30px;
-    /* background-color: aqua; */
 }
-.description h1{
+
+.description h1 {
     margin-bottom: 20px;
 }
-.description p{
+
+.description p {
     margin-bottom: 10px;
 }
-.description .bold{
+
+.description .bold {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
-
 }
-
 
 .country-info {
     display: flex;
@@ -124,22 +121,21 @@ body{
     margin-left: 20px;
 }
 
-.border-contries{
+.border-contries {
     margin-top: 20px;
 }
 
-.border-contries .border-box{
-    padding: 5px 25px 5px 30px;
+.border-contries .border-box {
+    padding: 5px 25px;
     background-color: #fff;
     margin-right: 10px;
     border-radius: 4px;
-    box-shadow: 0 0 8px rgba(0,0,0,.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
 }
 
-.border-contries .bold{
+.border-contries .bold {
     margin-right: 10px;
 }
-
 
 
 @media screen and (max-width:375px){
@@ -171,12 +167,10 @@ body{
     .country-info {
         display: flex;
         flex-direction: column;
-        /* background-color: blue; */
     }
     .right-column {
         margin-left: 0;
         margin-top: 30px;
-        /* background-color: aqua; */
     }
     .border-contries{
         margin-top: 20px;
@@ -193,7 +187,7 @@ body{
         border-radius: 5px;
     }
 }
-@media screen and (max-width:1440px){
+@media screen and (min-width:1440px){
     body{
         width: auto;
     }

@@ -16,7 +16,6 @@ a{
 }
 body{
     background-color: #fafafa;
-    width: 1440px;
     font-family: 'Nunito Sans', sans-serif;
 }
 .header {
@@ -34,7 +33,7 @@ body{
 }
 .header a{
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color: #000;
 }
 
@@ -46,18 +45,23 @@ body{
 
     display: flex;
     overflow: hidden;
-    height: 60px;
-    width: 35%;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+.filter{
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+    background-color: #ffffff;
     border-radius: 5px;
 }
 .searchbar .container{
     display: flex;
     justify-content: space-between;
-    margin-top: 3%;
+    padding: 40px 0 0px 0;
 }
+
+
 #select-box{
     border: none;
     float: right;
@@ -65,27 +69,25 @@ body{
     overflow-y:auto;
     width:200px;
     border-radius: 5px;
+    scroll-behavior: smooth;
+
 }
 option{
     border: none;
     overflow-y:scroll;
 }
 
-.options{
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-}
+
 .select-wrap{
     background-color: #fafafa;
     border-radius: 5px;
 }
 .search input[type=text] {
     float: right;
-    padding: 20px;
+    padding: 20px 15vw 20px 0;
     font-size: 17px;
     border: none;
-    width: 76%;
+    /* width: 76%; */
     /* background-color: coral; */
 }
 .search-container{
@@ -94,15 +96,16 @@ option{
 }
 .search-container button {
     background-color: #ffffff;
-    width: 15%;
-    padding: 20px 30px;
+    /* width: 15%; */
+    padding: 20px 25px 20px 25px;
     font-size: 17px;
     border: none;
     cursor: pointer;
 }
 
 
-.photos{
+
+.countries{
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -110,51 +113,65 @@ option{
 
     
 }
-.flag{
-    background-color: #ffffff;
-    width: 22%;
-    height: 350px;
-    box-sizing: border-box;
-    /* margin-bottom: 6%; */
-    margin-top: 5%;
-    border-radius: 10px;
-    margin-right: 1px;
-    
-}
-.flag h1,a{
-    font-weight: 600;
-    font-size: 20px;
-    color: #000;
-}
-.flag p{
-    margin-bottom: 5px;
+
+
+.countries{
+    padding-top: 40px;
 }
 
-.img-flag{
+
+
+
+.country{
+    background-color: #ffffff;
+    width: 22%;
+    height: 30vh;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    margin-right: 1px;
+    box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+.country h2,a{
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.country p{
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.img-country{
     height: 50%;
 }
-.img-flag img{
-    /* background-color: blue; */
+.img-country img{
     width: 100%;
     height: 100%;
     object-fit:cover;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 .description{
-    margin: 20px;
+    padding: 22px 20px 0 25px;
 }
-.pic-title{
-    margin-bottom: 20px;
+.country-title{
     font-weight: 600;
+    padding-bottom: 25px;
 }
 .bold{
-    font-weight: bold;
+    font-weight: 600;
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:475px){
     body{
         width: auto;
-        /* font-size: 9px; */
     }
     .container{
         width: 88%;
@@ -170,11 +187,10 @@ option{
         font-size: 14px;
     }
     .search-container{
-        margin-top: 10px;
-        margin-bottom: 7px;
         display: flex;
-        flex-direction: row-reverse;
         width: auto;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
     }
     .searchbar .container{
         display: flex;
@@ -183,9 +199,11 @@ option{
         width: 90%;
     }
     .search{
-        width: auto;
+        width: 100%;
         margin: 10px 0 20px 0;
     }
+    
+
     .search-container button {
         width: 15%;
         padding: 20px 30px;
@@ -199,28 +217,89 @@ option{
         border-radius: 5px;
     }
 
-    .photos{
+    .countries{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         flex-direction: column;
         align-content: space-around;
-        margin-bottom: 30px;
     }
-    .flag{
+    .country{
         width: 80%;
         height: 350px;
         font-size: 14px;    
     }
-    .flag h1{
+    .country h1{
         font-size: 16px;
     }
 }
-@media screen and (max-width:1440px){
+
+@media screen and (min-width:475px) and (max-width:1200px){
     body{
         width: auto;
     }
-    .photos{
-        margin-bottom: 30px;
+    .container{
+        width: 88%;
     }
+    .header {
+        height: 10%;
+    }
+    .header .container{
+        font-size: 8px;
+    }
+    .header a{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .search-container{
+        display: flex;
+        width: auto;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .searchbar .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+    }
+    .search{
+        margin: 10px 0 20px 0;
+    }
+    
+
+    .search-container button {
+        width: 15%;
+        padding: 20px 30px;
+    }
+    .searchbar .filter{
+        margin: 10px 0 15px 0;
+    }
+    #select-box{
+        height:55px;
+        width:200px;
+        border-radius: 5px;
+    }
+
+    .countries{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-around;
+    }
+    .country{
+        width: 45%;
+        height: 350px;
+        font-size: 14px;    
+    }
+    .country h1{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:1000px){
+    body{
+        width: auto;
+    }
+ 
 }
